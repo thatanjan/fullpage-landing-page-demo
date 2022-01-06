@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+.title {
+	font-size: 12rem;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-family: Kalam, cursive;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 10;
+	transform: translate(-50%, -50%);
+	width: 70%;
+	text-transform: capitalize;
+	padding: 2rem;
+}
+
+.slide {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.section::after {
+	content: '';
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: black;
+	opacity: 0.6;
+	z-index: 5;
+}
+
+.fp-controlArrow.fp-prev {
+	background-image: url('media/icons/left_arrow.png');
+}
+
+.fp-controlArrow.fp-next {
+	background-image: url('media/icons/right_arrow.png');
+}
+
+.fp-controlArrow.fp-prev,
+.fp-controlArrow.fp-next {
+	height: 10rem;
+	z-index: 10;
+	width: 6rem !important;
+	border-style: none;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+	background-color: white !important;
+}
+
+#fp-nav.fp-right {
+	top: auto;
+	transform: translateY(0px);
+	bottom: 2rem !important;
+}
